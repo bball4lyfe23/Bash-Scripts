@@ -272,7 +272,7 @@ EOF
 curl -XPUT "https://$DOMAIN_ENDPOINT/$DISTRIBUTION/_security/api/rolesmapping/manage_snapshots" \
     -H 'Content-Type: application/json' \
     -d "$TEST_PAYLOAD" \
-    -u 'aniiii:!Hdurina59110'
+    -u "$CREDENTIALS"
 
 
 ##########################
