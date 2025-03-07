@@ -2,14 +2,6 @@
 
 A bash script to automate the setup of an S3 snapshot repository for OpenSearch domains.
 
-## 🚀 Features
-
-- Creates an S3 bucket for storing snapshots
-- Sets up necessary IAM roles and policies
-- Configures OpenSearch to use the S3 repository
-- Supports cleanup of created resources
-- Handles both OpenSearch and Open Distro distributions
-
 ## 📋 Prerequisites
 
 - AWS CLI installed and configured
@@ -43,7 +35,7 @@ chmod +x reg-snap-repo.sh
 
 | Flag | Description | Example |
 |------|-------------|---------|
-| `-R, --region` | AWS region (default: us-east-1) | `-R eu-west-1` |
+| `-R, --region` | AWS region for S3 bucket (default: us-east-1) | `-R eu-west-1` |
 | `--cleanup` | Delete IAM resources after completion | `--cleanup` |
 | `-h, --help` | Show help message | `-h` |
 
