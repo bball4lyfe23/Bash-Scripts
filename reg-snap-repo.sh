@@ -205,7 +205,7 @@ aws s3api create-bucket --bucket ${BUCKET_NAME} --region ${REGION} >/dev/null 2>
 # 9. Create Snapshot Role
 ##########################
 
-echo "🔑 Creating Snapshot Role for OpenSearch domain access..."
+echo "🔑 Creating Snapshot Role for S3 access..."
 
 # Create Trust Policy
 SNAPSHOT_ROLE_TRUST_POLICY=$(cat <<EOF
@@ -281,7 +281,7 @@ fi
 # 10. Create Client Role
 #########################
 
-echo "👤 Creating Client Role for user access..."
+echo "👤 Creating Client Role for OpenSearch access..."
 
 # Get Current IAM Principal
 CURR_PRINCIPAL=$(aws sts get-caller-identity --query Arn --output text 2>/dev/null)
