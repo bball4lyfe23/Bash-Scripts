@@ -50,7 +50,7 @@ The following IAM permissions are required to run this script:
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/yourusername/Bash-Scripts.git
+git clone https://github.com/bball4lyfe23/Bash-Scripts.git
 cd Bash-Scripts
 chmod +x reg-snap-repo.sh
 ```
